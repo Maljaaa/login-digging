@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form th:action="@{/signup}" method="post">
+        <div>
+            <label for="userId">이메일:</label>
+            <input type="email" id="userId" name="userId" required>
+        </div>
+        <div>
+            <label for="userPw">비밀번호:</label>
+            <input type="password" id="userPw" name="userPw" required>
+        </div>
+        <div>
+            <label for="userName">사용자 이름:</label>
+            <input type="text" id="userName" name="userName" required>
+        </div>
+        <div>
+            <button type="submit">회원가입</button>
+        </div>
+    </form>
+    <a href="/">home</a>
+</body>
+</html>
